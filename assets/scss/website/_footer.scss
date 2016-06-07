@@ -1,0 +1,28 @@
+.footer {
+	color: $font-blue;
+	min-height: auto;
+	@media (max-width: $tablet-screen-width) {
+		padding: 0 $angle-section-padding-horizontal-small-screen 20px;
+	}
+	@media (min-width: $tablet-screen-width) {
+		padding: 0 $angle-section-padding-horizontal-large-screen 20px;
+	}
+}
+.footer h3 {
+	margin-bottom: 20px;
+}
+.footer a {
+	color: $font-blue;
+}
+.footer .container-fluid .row > div {
+	padding: 0;
+}
+.footer:before {
+	border-width: $angle-height 0 0 100vw;
+	border-color: transparent transparent transparent $bg-dark-blue;
+	top: -$angle-height;
+}
+.footer img {
+	display: inline-block;
+	margin: 20px 0 100px;
+}

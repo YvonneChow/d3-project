@@ -1,0 +1,90 @@
+.section {
+	@media (max-width: $tablet-screen-width) {
+		padding: 150px $angle-section-padding-horizontal-small-screen 50px;
+	}
+	@media (min-width: $tablet-screen-width) {
+		padding: 150px $angle-section-padding-horizontal-large-screen 50px;
+	}
+	min-height: $angle-section-height;
+	background-size: cover;
+}
+
+.bg-dark-blue {
+	background-color: $bg-dark-blue;
+}
+.bg-gray-blue {
+	background-color: $bg-gray-blue;
+}
+.bg-blue {
+	background-color: $bg-blue;
+}
+.angle-section {
+	position: relative;
+	background-size: cover;
+}
+.angle-section:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+}
+.max-width-wrap {
+	margin: 0 auto;
+	max-width: 1400px;
+	position: relative;
+}
+.journey-section.right .row > div:last-child {
+	@media (min-width: $tablet-screen-width) {
+		padding-right: 60px;
+		padding-left: 30px;
+	}
+}
+.journey-section.left .row > div:first-child {
+	@media (min-width: $tablet-screen-width) {
+		padding-left: 60px;
+		padding-right: 30px;
+	}
+}
+@media (max-width: $tablet-screen-width) {
+	.journey-section .row > div {
+		margin-bottom: 100px;
+	}
+}
+.journey-line {
+	width: 150px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.journey-section.right .journey-line {
+	right: 5%;
+	border-right: 2px solid white;
+}
+.journey-section.left .journey-line {
+	left: 5%;
+	border-left: 2px solid white;
+}
+.journey-line .journey-line-image {
+	position: absolute;
+	top: 30%;
+	right: -$journey-line-radius;
+	width: 2*$journey-line-radius;
+	height: 2*$journey-line-radius;
+	border: 2px solid white;
+	padding: 10px;
+	border-radius: $journey-line-radius;
+}
+.journey-line .journey-line-image img {
+	width: 100%;
+	height: 100%;
+}
+.journey-section.right .journey-line .journey-line-image {
+	right: -$journey-line-radius;
+}
+.journey-section.left .journey-line .journey-line-image {
+	left: -$journey-line-radius;
+}

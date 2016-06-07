@@ -1,0 +1,259 @@
+@import "website/_color";
+@import "website/_variable";
+@import "website/_typography";
+@import "website/_control";
+@import "website/_screen";
+@import "website/_navbar";
+@import "website/_section";
+@import "website/_footer";
+
+.hero-section {
+	background: linear-gradient(45deg, rgb(29,131,164),rgb(53,179,199)); 
+}
+.hero-section .hero-title {
+	padding: 50px 0;
+}
+.row > div:first-child {
+	padding-left: 0;
+	@media (max-width: $tablet-screen-width) {
+		padding-right: 0;
+	}
+	@media (min-width: $tablet-screen-width) {
+		padding-right: 50px;
+	}
+}
+.row > div:nth-child(2) {
+	padding-right: 0;
+	@media (max-width: $tablet-screen-width) {
+		padding-left: 0;
+	}
+	@media (min-width: $tablet-screen-width) {
+		padding-left: 50px;
+	}
+}
+.container-fluid .row > div > img {
+	width: 100%;
+}
+.journey-section .container-fluid .row > div:last-child > img {
+	@media (min-width: $tablet-screen-width) {
+		float: right;
+	}
+}
+.journey-section .container-fluid .row > div > img {
+	@media (min-width: $tablet-screen-width) {
+		width: 80%;
+	}
+}
+#future-of-care-delivery:before {
+	border-width: 0 0 $angle-height 100vw;
+	border-color: transparent transparent $bg-gray-blue transparent;
+	top: -$angle-height;
+}
+#future-of-care-delivery img {
+	@media (max-width: $tablet-screen-width) {
+		margin-bottom: 50px;
+	}
+}
+#future-of-care-delivery {
+	padding-top: 50px;
+	min-height: auto;
+}
+#future-of-care-delivery .container-fluid {
+	position: relative;
+}
+#future-of-care-delivery .container-fluid .row > div:last-child {
+	padding-top: 80px;
+}
+#future-of-care-delivery .horizontal-journey-line {
+	width: 100px;
+	height: 92px;
+	border: 2px solid $bg-blue;
+	position: absolute;
+	right: calc(50% - 2px);
+	z-index: 20;
+	bottom: -90px;
+	border-left: none;
+	border-bottom: none;
+	border-top-right-radius: $journey-line-radius;
+}
+#future-vs-now {
+	padding-top: 0;
+	padding-bottom: 0;
+	min-height: auto;
+}
+#future-vs-now img {
+	height: 520px;
+}
+#future-vs-now:before {
+	z-index: 10;
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent $bg-gray-blue transparent transparent;
+}
+#future-vs-now h1 {
+	font-size: 40px;
+	line-height: 44px;
+}
+#future-vs-now .container-fluid > .row > div > .row > div:first-child {
+	padding-right: 10px;
+}
+#future-vs-now .container-fluid > .row > div > .row {
+	margin: 70px 0;
+}
+#future-vs-now .container-fluid .row .percent-sign {
+	font-size: 30px;
+}
+#future-vs-now .container-fluid .row > div {
+	padding-left: 0;
+}
+@media (min-width: $tablet-screen-width) {
+	#future-vs-now .container-fluid > .row > div > .row:last-child {
+		padding-bottom: 50px;
+	}
+}
+@media (max-width: $tablet-screen-width) {
+	#future-vs-now .container-fluid .row .text-right {
+		text-align: left;
+	}
+}
+#future-vs-now .container-fluid > .row > div:last-child {
+	padding-top: 60px;
+}
+#find-patients:before {
+	top: -$angle-height;
+	border-width: 0 0 $angle-height 100vw;
+	border-color: transparent transparent $bg-dark-blue transparent;
+}
+#find-patients h2 {
+	margin-top: 100px;
+}
+@media (min-width: $tablet-screen-width) {
+	#find-patients .container-fluid .row > div img {
+		margin-top: 150px;
+	}
+}
+#find-patients .journey-line {
+	top: 160px;
+	width: 23%;
+	border-top: 2px solid white;
+	border-top-right-radius: $journey-line-radius;
+}
+#find-patients .horizontal-journey-line {
+	width: 80px;
+	height: 203px;
+	border: 2px solid white;
+	position: absolute;
+	left: 50%;
+	z-index: 20;
+	top: -$angle-height*0.5;
+	border-top: none;
+	border-right: none;
+	border-bottom-left-radius: $journey-line-radius;
+}
+#connect-patients:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent $bg-dark-blue transparent transparent;
+}
+#optimized-dosages:before {
+	border-width: $angle-height 100vw 0 0;
+	border-color: $bg-blue transparent transparent transparent;
+}
+#optimized-dosages .journey-line,
+#optimized-dosages .journey-line .journey-line-image {
+	border-color: $bg-blue;
+}
+#insulin-delivered:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent $bg-gray-blue transparent transparent;
+}
+#insulin-delivered .journey-line,
+#insulin-delivered .journey-line .journey-line-image {
+	border-color: $bg-blue;
+}
+#insulin-delivered .journey-line .journey-line-image {
+	background: white;
+}
+#monitor-patients:before {
+	border-width: $angle-height 100vw 0 0;
+	border-color: white transparent transparent transparent;
+}
+#monitor-patients .journey-line .journey-line-image {
+	padding: 5px;
+}
+#patients-recover:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent $bg-dark-blue transparent transparent;
+}
+#open-conversation .max-width-wrap {
+	padding-top: 120px;
+}
+#open-conversation h2 {
+	margin-top: 100px;
+}
+#open-conversation:before {
+	border-width: $angle-height 100vw 0 0;
+	border-color: $bg-blue transparent transparent transparent;
+}
+#open-conversation .journey-line,
+#open-conversation .journey-line .journey-line-image {
+	border-color: $bg-blue;
+}
+#open-conversation .journey-line {
+	top: 130px;
+	width: 50px;
+	border-top: 2px solid $bg-blue;
+	border-top-left-radius: $journey-line-radius;
+}
+#open-conversation .horizontal-journey-line {
+	width: calc(90% - 180px);
+	height: 124px;
+	border: 2px solid $bg-blue;
+	position: absolute;
+	right: 5%;
+	top: 8px;
+	border-left: none;
+	border-top: none;
+	border-bottom-right-radius: $journey-line-radius;
+}
+#register-patients .row > div > img {
+	margin-bottom: 100px;
+}
+#register-patients:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent $bg-gray-blue transparent transparent;
+}
+#register-patients .journey-line,
+#register-patients .journey-line .journey-line-image {
+	border-color: $bg-blue;
+}
+#register-patients .journey-line .journey-line-image {
+	background: white;
+}
+#optimized-dosages-2 .section {
+	padding-top: 50px;
+}
+#optimized-dosages-2 .journey-line,
+#optimized-dosages-2 .journey-line .journey-line-image {
+	border-color: $bg-blue;
+}
+#optimized-dosages-2:before {
+	border-width: 0 0 $angle-height 100vw;
+	border-color: transparent transparent $bg-dark-blue transparent;
+	top: -$angle-height;
+}
+#patient-in-loop:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent $bg-dark-blue transparent transparent;
+}
+#patient-in-loop .journey-line,
+#patient-in-loop .journey-line .journey-line-image {
+	border-color: white;
+}
+#rinse-and-repeat:before {
+	top: -$angle-height;
+	border-width: 0 0 $angle-height 100vw;
+	border-color: transparent transparent $bg-gray-blue transparent;
+}
+#rinse-and-repeat .journey-line,
+#rinse-and-repeat .journey-line-image {
+	border-color: $bg-blue;
+}

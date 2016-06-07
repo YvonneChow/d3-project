@@ -1,0 +1,73 @@
+.teamMember {
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	img {
+		max-height:245px;
+		max-width: 245px;
+		border-radius: 123px;
+		margin-bottom: 30px;
+	}
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	.name {
+		font-weight: bold;
+	}
+	.credentials {
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+.profile {
+	margin-top: 57px;
+	img {
+		max-height: 394px;
+		max-width: 394px;
+		border-radius: 197px;
+	}
+	.profileImage, .profileName {
+		vertical-align: top;
+		display: inline-block;
+	}
+	.profileName {
+		padding-top: 17px;
+		padding-bottom: 28px;
+		padding-left: 73px;
+		.name {
+			font-size: 36px;
+			line-height: .6;
+		}
+		.credentials {
+			font-size: 18px;
+		}
+		.position {
+			font-size: 18px;
+			color: #2e9bb6;
+		}
+		.contact {
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				display: inline-block;
+				height: 35px;
+				width: 35px;
+				margin-right: 15px;
+			}
+			.twitter {
+				background: url("../images/twitterIcon.png") no-repeat;
+				background-size: 100%;
+			}
+			.linkedIn {
+				background: url("../images/linkedInIcon.png") no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+
+}

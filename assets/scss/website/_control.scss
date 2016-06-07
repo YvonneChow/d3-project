@@ -1,0 +1,70 @@
+.btn-primary {
+	background-color: $button-blue;
+	border: none;
+	border-radius: 0;
+	height: $button-height;
+	padding: 10px 20px;
+	font-weight: normal;
+	@media (max-width: $tablet-screen-width) {
+		width: 100%;
+	}
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+	background-color: $button-blue;
+}
+
+.btn-secondary {
+	background: #fff;
+	border: solid $font-blue 3px;
+	color: $font-blue;
+	box-sizing: border-box;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active:focus,
+.btn-secondary:active:hover {
+	border: none;
+	line-height: 1.4;
+	padding-left: 23px;
+	padding-right: 23px;
+}
+
+.contact-form .form-control {
+	border-radius: 0;
+	border-color: white;
+	margin-bottom: 15px;
+	background-color: $bg-input-light-blue;
+	height: $contact-form-control-height;
+	box-shadow: 1px 0px 4px rgba(0,0,0,0.2);
+	padding: 15px;
+}
+.contact-form .form-control::-webkit-input-placeholder {
+	color: $font-blue;
+}
+.contact-form .form-control::-moz-placeholder {
+	color: $font-blue;
+}
+.contact-form .form-control::-ms-placeholder {
+	color: $font-blue;
+}
+.contact-form textarea.form-control {
+	height: 180px;
+}
+.contact-form .btn {
+	height: $contact-form-control-height;
+	border-radius: 0;
+	width: 100%;
+	background-color: $button-blue;
+	border: none;
+	color: white;
+}
+
+.search.form-control {
+	width: 400px;
+	border-radius: 17px;
+}

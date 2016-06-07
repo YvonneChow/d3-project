@@ -1,0 +1,1 @@
+$(document).ready(function($){$(".hero-section button").click(function(o){$(".hero-section h1").toggle(),$(".hero-section p").toggle()}),$(".carousel").carousel({interval:!1}),$(window).scroll(function(o){$(window).scrollTop()>20?$(".navbar").addClass("scrolled"):$(".navbar").removeClass("scrolled")})});

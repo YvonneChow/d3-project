@@ -1,0 +1,16 @@
+@media (max-width: $tablet-screen-width) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+}
+@media (min-width: $tablet-screen-width) {
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
+}

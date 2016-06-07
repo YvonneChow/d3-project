@@ -1,0 +1,62 @@
+.axis text {
+	font-size: 16px;
+	fill: #929292;
+	//transform: translate(0,5px);
+}
+.topAxis text {
+	font-size: 14px;
+}
+.axis path {
+	fill: none;
+	stroke: $light_axis_gray;
+	stroke-width: 2;
+	shape-rendering: crispEdges;
+}
+.axis line {
+	opacity: 0;
+}
+circle:hover,
+path:hover {
+	cursor: pointer;
+}
+div.tooltip {	
+    position: absolute;			
+   /* width: 60px;					
+    height: 28px;			*/		
+    padding: 10px;				
+    background: #ffffff;	
+    border: 1px solid #939496;		
+    border-radius: 8px;				
+}
+.tooltip:after, .tooltip:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.tooltip:after {
+	border-top-color: #ffffff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.tooltip:before {
+	border-top-color: #939496;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.col-sm-11 {
+	padding:  0;
+}
+.col-sm-1 {
+	padding-top: 110px;
+}
+.btn {
+	margin-bottom: 10px;
+}
+

@@ -1,0 +1,59 @@
+@import "website/_color";
+@import "website/_variable";
+@import "website/_typography";
+@import "website/_control";
+@import "website/_screen";
+@import "website/_navbar";
+@import "website/_section";
+@import "website/_footer";
+
+.max-width-wrap.contact-page {
+	margin: 0;
+}
+.navbar>.container-fluid.max-width-wrap.contact-page {
+	margin: 0;
+}
+.contact-form h1 {
+	margin-bottom: 50px;
+}
+.container-fluid .row > .col-sm-6:first-child {
+	padding-left: 0;
+	@media (max-width: $tablet-screen-width) {
+		padding-right: 0;
+	}
+}
+.container-fluid .row > .col-sm-6:last-child {
+	padding-right: 0;
+	@media (max-width: $tablet-screen-width) {
+		padding-left: 0;
+	}
+}
+.contact-address {
+	padding: 0;
+}
+.contact-address .container-fluid .row > .address {
+	padding: 150px 50px 50px 50px;
+}
+.contact-address .container-fluid .row:last-child > .address {
+	text-align: right;
+}
+.contact-address:before {
+	border-width: 100px 100vw 0 0;
+	border-color: $bg-blue transparent transparent transparent;
+	top: 0;
+	z-index: 10;
+}
+.contact-address .map-ma {
+	height: 400px;
+	background-image: url("../images/company_map_MA.jpg");
+	background-size: cover;
+	background-position: 40% 60%;
+}
+.contact-address .map-sc {
+	height: 400px;
+	background-image: url("../images/company_map_SC.jpg");
+	background-size: cover;
+	background-position: 50% 40%;
+}
+
+

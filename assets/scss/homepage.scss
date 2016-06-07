@@ -1,0 +1,198 @@
+@import "website/_color";
+@import "website/_variable";
+@import "website/_typography";
+@import "website/_control";
+@import "website/_screen";
+@import "website/_navbar";
+@import "website/_section";
+@import "website/_footer";
+
+.hero-section {
+	background-image: url("../images/hero_image.jpg");
+	background-size: cover;
+	background-position: 70% 60%;
+	height: $angle-section-height;
+}
+
+#the-old-way {
+	padding-top: 0;
+}
+#the-old-way:before {
+	border-width: 0 0 $angle-height 100vw;
+	border-color: transparent transparent $bg-dark-blue transparent;
+	top: -$angle-height;
+}
+#the-old-way img {
+	margin: 30px auto;
+	@media (max-width: $tablet-screen-width) {
+		width: 100%;
+		//display: none;
+	}
+	@media (min-width: $tablet-screen-width) {
+		width: 90%;
+		max-width: 900px;
+		display: block;
+	}
+}
+#the-old-way .performance-number {
+	@media (min-width: $tablet-screen-width) {
+		margin-top: -150px;
+	}
+}
+.performance-number {
+	margin: 20px 0;
+	@media (max-width: $tablet-screen-width) {
+		text-align: left;
+	}
+	@media (min-width: $tablet-screen-width) {
+		text-align: center;
+	}
+}
+.performance-number .row > div {
+	margin-bottom: 50px;
+	@media (max-width: $tablet-screen-width) {
+		padding: 0;
+	}
+}
+#the-future:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent $bg-dark-blue transparent transparent;
+}
+#the-future img {
+	display: block;
+	margin: 30px auto;
+	@media (max-width: $tablet-screen-width) {
+		width: 100%;
+	}
+}
+#the-future .btn {
+	@media (min-width: $tablet-screen-width) {
+		display: block;
+		margin: 50px auto 0;
+		width: 140px;
+	}
+}
+p.description {
+	@media (min-width: $tablet-screen-width) {
+		max-width: 450px;
+	}
+	margin: 20px 0;
+}
+.solutions h2 {
+	max-width: 400px;
+}
+.solutions {
+	position: relative;
+}
+.solutions:after {
+	content: '';
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	width: 100vw;
+	height: 100px;
+	background: linear-gradient(to top, rgba(255,255,255,1),rgba(255,255,255,0)); 
+}
+.solutions .btn-primary {
+	@media (min-width: $tablet-screen-width) {
+		margin-top: 80px;
+	}
+	@media (max-width: $tablet-screen-width) {
+		position: absolute;
+		bottom: 80px;
+		left: $angle-section-padding-horizontal-small-screen;
+		width: calc(100% - 30px);
+
+	}
+}
+#solutions-for-excutives {
+	background-image: url("../images/solutions_for_excutives.jpg");
+}
+#solutions-for-excutives:before {
+	border-width: $angle-height 100vw 0 0;
+	border-color: white transparent transparent transparent;
+}
+#solutions-for-clinicians {
+	background-image: url("../images/solutions_for_clinicians.jpg");
+	background-position: 60% 80%;
+}
+#solutions-for-clinicians:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent white transparent transparent;
+}
+#solutions-for-patients {
+	background-image: url("../images/solutions_for_patients.jpg");
+	background-position: 50% 80%;
+}
+#solutions-for-patients:before {
+	border-width: $angle-height 100vw 0 0;
+	border-color: white transparent transparent transparent;
+}
+#solutions-for-healthit {
+	background-image: url("../images/solutions_for_healthit.jpg");
+	background-position: 95% 80%;
+}
+#solutions-for-healthit:before {
+	border-width: 0 100vw $angle-height 0;
+	border-color: transparent white transparent transparent;
+}
+#news {
+	padding-bottom: 150px;
+}
+#news:before {
+	border-width: $angle-height 100vw 0 0;
+	border-color: white transparent transparent transparent;
+}
+.news-box {
+	border: 2px solid $font-blue;
+	background-color: $bg-homepage-news-box;
+	padding: 15px;
+	min-height: 330px;
+	display:inline-block;
+	margin-bottom: 20px;
+	@media (max-width: $tablet-screen-width) {
+		margin: 0 35px;
+	}
+}
+.news-box strong {
+	margin-right: 10px;
+}
+.carousel .row > div {
+	padding: 0 10px;
+}
+.carousel .carousel-control {
+	background-image: none;
+	background-color: $button-blue;
+	opacity: 1;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	top: 40%;
+}
+.carousel .carousel-control.left {
+	@media (max-width: $tablet-screen-width) {
+		left: -10px;
+	}
+	@media (min-width: $tablet-screen-width) {
+		left: -40px;
+	}
+}
+.carousel .carousel-control.right {
+	@media (max-width: $tablet-screen-width) {
+		right: -10px;
+	}
+	@media (min-width: $tablet-screen-width) {
+		right: -40px;
+	}
+}
+.carousel .carousel-control .glyphicon {
+	top: 18px;
+	text-shadow: none;
+	font-size: 25px;
+}
+.carousel .carousel-control .glyphicon-chevron-left {
+	left: 15px;
+}
+.carousel .carousel-control .glyphicon-chevron-right {
+	right: 15px;
+}

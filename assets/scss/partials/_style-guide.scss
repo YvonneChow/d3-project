@@ -1,0 +1,235 @@
+/*
+	Style guide styles
+	Ignore this file in terms of style
+	and design patterns for application
+*/
+
+.guide-header {
+	width: 100%;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-left: 2.0rem;
+	border-bottom: $border-base;
+	background: #fff;
+	z-index: 10;
+	h1 {
+		margin-bottom: 0;
+	}
+	p {
+		margin-top: 0;
+	}
+}
+#version {
+	color: $font-color-secondary;
+	margin-top: -0.75rem;
+	font-size: $font-size-small;
+}
+.sizes {
+	display: inline-block;
+	position: absolute;
+	right: 5.0rem;
+	top: 0;
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			padding: 0 1.0rem 0 1.0rem;
+			line-height: 2.4rem;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.table-contents {
+	width: 15%;
+	height: 100%;
+	display: block;
+	box-sizing: border-box;
+	position: fixed;
+	right: 0;
+	min-width: 12.0rem;
+	padding: 3.5rem 1.5rem 0 1.5rem;
+	background: #fff;
+	border-left: $border-base;
+	z-index: 9;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			padding: 0;
+			margin-bottom: 1.0rem;
+			h3 {
+				line-height: 2.4rem;
+				padding: 0;
+				margin: 0;
+			}
+			ul {
+				margin-left: 1.0rem;
+				li {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+.guide {
+	width: 85%;
+	display: block;
+	margin-top: 7.5rem;
+	background: #fafafa;
+}
+
+.container {
+	//border: solid red 1px;
+	padding: 2.0rem;
+	background: #fff;
+	&.small {
+		//border: solid blue 1px;
+		width: 400px;
+		@include menu-small;
+	}
+	&.medium {
+		//border: solid green 1px;
+		width: 768px;
+	}
+
+}
+
+.guide-section {
+	border-bottom: solid 0.063rem #dedede;
+	padding-bottom: 2.5rem;
+	margin: 0 0 1.5rem 0;
+	padding-top: 7rem;
+	overflow-x: hidden;
+}
+
+h3.elementTitle {font-weight: bold; }
+pre {
+	color: $font-color-secondary;
+}
+.style-element {
+	margin: 2.5rem 0 1.5rem 0;
+	border-bottom: solid 0.063rem #dedede;
+	&:last-child {
+		border-bottom: none;
+	}
+}
+p {
+	max-width: 50rem;
+	font-size: 1.8rem;
+	pre { 
+		margin-top: -0.725rem; 
+	}
+	&.note {
+		font-family: $font-family-serif;
+	}
+}
+
+.sub-note {
+	color: $font-color-secondary;
+	font-size: 1.0rem;
+}
+
+#parameterPanel {
+	display: block;
+	.sidePanel {
+		display: inline-block;
+	}
+}
+
+h3.show_markup, h3.show_styles, h3.show_JS { 
+	color: $font-color-link;
+	font-size: 1.2rem;
+	cursor: pointer;
+	text-align: right;
+	margin-right: 3.0rem;
+}
+.markup, .styles, .js {
+	box-sizing: border-box;
+	display: none;
+	&.show {
+		display: block;
+	}
+}
+
+#icons {
+	ul {
+		list-style: none;
+		li {
+			//box-sizing: border-box;
+			vertical-align: top;
+			padding: 0.9rem;
+			display: inline-block;
+			height: 20.0rem;
+			width: 20.0rem;
+			border: 1px solid #f3f3f3;
+			margin-right: -0.4rem;
+			margin-bottom: -0.1rem;
+			span {
+				vertical-align: top;
+			}
+			.icon-name {
+				color: $font-color-secondary;
+			}
+			.icon-desc {
+
+			}
+		}
+	}
+}
+
+
+.color {
+	display:inline-block;
+	p { 
+		font-size: $font-size-small;
+		color: $font-color-secondary;
+	}
+	div {
+		display: inline-block;
+	}
+	span {
+		font-family: 'consolas';
+		color: $font-color-secondary;
+		font-size: $font-size-base;
+	}
+		
+	.color-block {
+		height: 8.5rem;
+		width: 8.5rem;
+		margin-bottom: 20px;
+		box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+		&.bg-dark-blue { background: $bg-dark-blue; }
+		&.bg-blue { background: $bg-blue; }
+		&.button-blue { background: $button-blue; }
+		&.bg-homepage-news-box { background: $bg-homepage-news-box; }
+		&.bg-input-light-blue {background: $bg-input-light-blue;}
+		&.bg-gray-blue {background: $bg-gray-blue;}
+		&.bg-header-dark-blue {background: $bg-header-dark-blue;}
+	}
+	.color-label {
+		height: 8.5rem;
+		width: 10rem;
+		vertical-align: top;
+	}
+}
+
+#typography {
+	p.note { 
+		font-size: $font-size-small;
+		color: $font-color-secondary;
+	}
+}
+
+/* because the container in the guide 
+	is smaller than the browser area
+	approx. 760px + 15% + 20px*2 + scrollbar
+ */
+@media (max-width: 930px) {
+	@include menu-small;
+}

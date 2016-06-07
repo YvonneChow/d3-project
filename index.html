@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Glytec Website Style Guide</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/guide.css" media="screen">
+</head>
+
+<body>
+    <div class="guide-header">
+        <h2><a href="https://github.com/goinvo/glytecGlucommander/">Glytec Website Style Guide</a> <span id="version">v1 - 19 Apr 2016</span></h2>
+        <p class="sub-note"><!-- Note: All styles are written with base-20 font-size, where 1rem = 20px. --></p>
+    </div>
+    <div class="table-contents">
+        <ul>
+            <!--<li><h3><a href="#introduction">Introduction</a></h3></li>-->
+            <li><h3><a href="#colors">Colors</a></h3></li>
+            <li><h3><a href="#typography">Typography</a></h3>
+                <!--<ul>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#icons">Icons</a></li>
+                </ul>-->
+            </li>
+            <li><h3><a href="#controls">Controls</a></h3>
+                <ul>
+                    <li><a href="#text-input">Text Input</a></li>
+                    <li><a href="#buttons">Button</a></li>
+                </ul>
+            </li>
+            <li><h3><a href="#homepage">Homepage Styles</a></h3>
+                <ul>
+                    <li><a href="#home-menu">Homepage Header</a></li>
+                    <li><a href="#home-diagonal">Homepage Diagonal</a></li>
+                </ul>
+            </li>
+            <li><h3><a href="#demo-links" target="_blank">Demo</a></h3></li>
+            <li class="toc-end"></li>
+        </ul>
+    </div>
+
+    <div class="guide">
+        <div class="container">
+            <!--<div class="guide-section" id="introduction">
+                <h2 class="guide-section-title">Introduction</h2>
+                <p>Use this style guide as a template to build your html-based style guide.</p>
+                <p>
+            </div>-->
+            <div class="guide-section" id="colors">
+                <h2 class="guide-section-title">Colors</h2>
+                <div class="component color">
+                    <div class="color-block bg-dark-blue"></div>
+                    <div class="color-label"><p>$bg-dark-blue <br /> #283239 <br /> rgb (40,50,57)</p></div>
+                </div>
+                <div class="color">
+                    <div class="color-block bg-blue"></div>
+                    <div class="color-label"><p>$bg-blue <br /> #2d98b3 <br /> rgb (45,152,179)</p></div>
+                </div>
+                <div class="color">
+                    <div class="color-block bg-input-light-blue"></div>
+                    <div class="color-label"><p>$bg-input-light-blue <br /> #98d2de <br /> rgb(152,210,222)</p></div>
+                </div>
+                <div class="color">
+                    <div class="color-block bg-gray-blue"></div>
+                    <div class="color-label"><p>$bg-gray-blue <br /> #cdd8e1 <br /> rgb(205,216,225)</p></div>
+                </div>
+                <div class="color">
+                    <div class="color-block bg-header-dark-blue"></div>
+                    <div class="color-label"><p>$bg-header-dark-blue <br /> #35495d <br /> rgb(53,73,93)</p></div>
+                </div>
+                <div class="color">
+                    <div class="color-block button-blue"></div>
+                    <div class="color-label"><p>$button-blue <br /> #267a95 <br /> rgb(38,122,149)</p></div>
+                </div>
+                <div class="color">
+                    <div class="color-block bg-homepage-news-box"></div>
+                    <div class="color-label"><p>$bg-homepage-news-box <br /> #dde6ed <br /> rgb(221,230,237)</p></div>
+                </div>
+            </div>
+
+            <div class="guide-section" id="typography">
+                <h2 class="guide-section-title">Typography</h2>
+                <div class="component">
+                    <p>font-family: 'Source Sans Pro', sans-serif;
+
+                    </p>
+                    <h1>Header 1</h1>
+                    <pre>font-size: 60px;
+line-height: 60px;
+font-weight: 300;
+margin: 0 0 10px 0;</pre>
+                    <h2>Header 2</h2>
+                    <pre>font-size: 33px;
+line-height: 44px;
+font-weight: 300;
+margin: 0 0 10px 0;</pre>
+                    <h3>Header 3</h3>
+                    <pre>font-size: 24px;
+line-height: 33px;
+font-weight: 300;
+margin: 0;</pre>    
+                    <p>Body</p>
+                    <pre>font-size: 18px;
+font-weight: 300;</pre>    
+                    <p class="large-text">large text</p>
+                    <pre>font-size: 60px;
+line-height: 60px;
+font-weight: 300</pre>
+                    <p class="small-text">small text</p>
+                    <pre>font-size: 12px;
+font-weight: 300</pre>
+                    <p class="font-blue">font blue</p>
+                    <pre>color: #2e9bb6;</pre>
+                    <p class="font-gray">font gray</p>
+                    <pre>color: #a5a5a5;</pre>
+                </div>
+            </div>
+
+            <div class="bookmark" id="controls"></div>
+            <div class="guide-section" id="text-input">
+                <h2 class="guide-section-title">Input</h2>
+                <div class="component">
+                    <!-- <div class="inputGroup search-box">
+                        <div class="label">search</div>
+                        <input type="text" placeholder="Search authors, tags" />
+                    </div>
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup">
+                        <script src="https://gist.github.com/jen-p/53285da022a4f5481d0e.js"></script>
+                    </div>
+                    <h3 class="show_styles">Show LESS</h3>
+                    <div class="styles">
+                        <script src="https://gist.github.com/jen-p/45458fa8ac05c5580b37.js"></script>
+                    </div> -->
+
+                    <div class="inputGroup contact-form">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup">
+                        <script src="https://gist.github.com/YvonneChow/bb21b1d90bf102297bed46bc8b9dfed6.js"></script>
+                    </div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles">
+                        <script src="https://gist.github.com/YvonneChow/7b681f305811c6bb2f16442079b99b2b.js"></script>
+                    </div>
+
+                    <div class="inputGroup contact-form">
+                        <textarea  class="form-control" placeholder="How can we help you? We'll get back to you in 2-3 business days."></textarea>
+                    </div>
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup">
+                        <script src="https://gist.github.com/YvonneChow/f6f16a889eea9971e7c6ecf3331dff33.js"></script>
+                    </div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles">
+                        <script src="https://gist.github.com/YvonneChow/cd64e235b1d0a751593de50263620a29.js"></script>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="text" class="form-control search" placeholder="Search titles, tags">
+                    </div>
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup">
+                        <script src="https://gist.github.com/YvonneChow/189e96e609a4d23ecc98428758e4e2d1.js"></script>
+                    </div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles">
+                        <script src="https://gist.github.com/YvonneChow/6344124fc0e0a95aa1649fe6bf70600c.js"></script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-section" id="buttons">
+                <h2 class="guide-section-title">Button</h2>
+                <div class="component">
+
+                    <h3 class="guide-section-title">Button</h3>
+
+                    <a href="javascript:void(0)" role="button" class="btn btn-primary">SEE THE FUTURE</a>
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup">
+                        <script src="https://gist.github.com/YvonneChow/d7e8c3234170a52460abc1a60246414f.js"></script>
+                    </div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles">
+                        <script src="https://gist.github.com/YvonneChow/a717d6fbfe24f8c6620ba026a4e34bff.js"></script>
+                    </div>
+
+                    <h3 class="guide-section-title">Secondary Button</h3>
+
+                    <a href="javascript:void(0)" role="button" class="btn btn-primary btn-secondary">APPLY</a>
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup"> <script src="https://gist.github.com/jen-p/c96f542c8a45f311056a74e77887cac5.js"></script></div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles"><script src="https://gist.github.com/jen-p/8522f00738638462d6fe9005f1b61027.js"></script></div>
+                </div>
+            </div>
+            <div class="guide-section" id="homepage">
+                <h2 class="guide-section-title">Homepage Style</h2>
+
+                <h3 class="section-title" id="home-menu">Homepage Header</h3>
+                 <div class="component">
+                    <nav class="navbar navbar-default scrolled">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="website/homepage.html"><img src="assets/images/glytec_logo.png"></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">        
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="website/solutions.html">SOLUTIONS</a></li>
+                            <li><a href="javascript:void(0)">EVIDENCE</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMPANY<span class="glyphicon glyphicon-menu-down"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">OUR TEAM</a></li>
+                                <li><a href="#">BOARDS</a></li>
+                                <li><a href="#">CAREERS</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">NEWS</a></li>
+                            <li class="highlight"><a href="website/contact.html">CONTACT</a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>
+
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup">
+                        <script src="https://gist.github.com/YvonneChow/bc9391d72a20f80c2b4d922f8e974f21.js"></script>
+                    </div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles">
+                        <script src="https://gist.github.com/YvonneChow/4a1c5d8d996d4018f50d5eb1a2fe2ec8.js"></script>
+                    </div>
+                    <h3 class="show_JS">Show Scripts</h3>
+                    <div class="js">
+                        <script src="https://gist.github.com/YvonneChow/fccab7b9276e603c1cd80bb21fbb785f.js"></script>
+                    </div>
+
+
+
+                    <h3 class="section-title" id="home-diagonal">Homepage Diagonal</h3>
+                    <p>Diagonal is a 7-degree psuedo-element. As such, images are not able to be masked on most browsers, so we use a gradient to terminate on sections with images as position as a background-cover, and layer the sections on top of one another to give the appearance of masking on at least one side where possible.</p>
+                     <div class="component">
+                        <div class="section angle-section solutions" id="solutions-for-excutives">
+                            <h2>Hundreds of lives and millions of dollars saved.</h2>
+                            <p class="description">San Joaquin is known for the highest rate of diabetes in the nation. At Kaweah, the adoption of Glytec Systems helped us halve the length of stay of our diabetic patients and greatly improves our quality of glycemic care in all of our clinics.</p>
+                            <p class="description small-text"><strong>Lindsay K. Mann</strong><br/>Chief Executive Officer<br/>Kaweah Delta</p>
+                            <a href="#" role="button" class="btn btn-primary">SOLUTIONS FOR EXCUTIVES</a>
+                        </div>
+                        <div class="section angle-section solutions" id="solutions-for-clinicians">
+                            <div class="pull-right">
+                                <h2>It's so simple.</h2>
+                                <p class="description">The system handles the data, giving me more time to focus on my patients.</p>
+                                <p class="description small-text"><strong>Margot Summer</strong><br/>Chief RN<br/>Hartford Clinic</p>
+                                <a href="#" role="button" class="btn btn-primary">SOLUTIONS FOR CLINICIANS</a>
+                            </div>
+                        </div>
+
+                        <h3 class="show_markup">Show Markup</h3>
+                        <div class="markup">
+                            <script src="https://gist.github.com/YvonneChow/258c3e20ba627811aa7178c64a42e001.js"></script>
+                        </div>
+                        <h3 class="show_styles">Show SCSS</h3>
+                        <div class="styles">
+                            <script src="https://gist.github.com/YvonneChow/d39c06a926af355a80c2e77103edf0a1.js"></script>
+                        </div>
+                    
+                    </div>
+
+            </div>
+
+             <div class="guide-section" id="company">
+                <h2 class="guide-section-title">Company Style</h2>
+
+                <h3 class="section-title" id="team-grid">Team Grid</h3>
+                <div class="component">
+                    <div class="teamMember">
+                        <img src="./assets/images/teamMember.png" class="scale-with-grid" />
+                        <p class="name">Dr. Andy Rhinehart, <span class="credentials">MD, FACP, FACE, CDE, BC-ADM, CDTC</span></p>
+                        <p class="position">CEO, Founder</p>
+                    </div>
+
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup"><script src="https://gist.github.com/jen-p/415d0440269bdee5d72eadde15c2fcb2.js"></script></div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles"><script src="https://gist.github.com/jen-p/412d41f601aebf01a0514fa3d548ba31.js"></script></div>
+                </div>
+
+                <h3 class="section-title" id="team-profile">Team Member Profile</h3>
+                <div class="component">
+                    <div class="profile">
+                        <div class="profileImage">
+                            <img src="./assets/images/teamMemberProfile.png" class="scale-with-grid" />
+                        </div>
+                        <div class="profileName">
+                            <p class="name">Dr. Andy Rhinehart, <span class="credentials">MD, FACP, FACE, CDE, BC-ADM, CDTC</span></p>
+                            <p class="position">CEO, Founder</p>
+                            <div class="contact">
+                                <ul>
+                                    <li class="linkedIn"></li>
+                                    <li class="twitter"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="show_markup">Show Markup</h3>
+                    <div class="markup"><script src="https://gist.github.com/jen-p/38da8a9e8ea288109139293a44f96ec3.js"></script></div>
+                    <h3 class="show_styles">Show SCSS</h3>
+                    <div class="styles"><script src="https://gist.github.com/jen-p/3fb7df69d86f7a600a168e7d162c7642.js"></script></div>
+                </div>
+            </div>
+
+            
+
+            <div class="guide-section" id="demo-links">
+                <h2 class="guide-section-title">Demo</h2>
+                <p>1. <a href="website/homepage.html" target="_blank">homepage</a></p>
+                <p>2. <a href="website/contact.html" target="_blank">contact</a></p>
+                <p>3. <a href="website/solutions.html" target="_blank">solutions</a></p>
+            </div>
+        </div> <!--end container-->
+    </div> <!-- end guide -->
+
+    <script src="./assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+    <script src="./assets/js/guide.js" type="text/javascript"></script>
+</body>
+</html>
